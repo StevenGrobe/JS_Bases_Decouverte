@@ -2,4 +2,10 @@
 
 console.log('exo-4');
 
-var secretMessage = ["Learning", "isn't", "about", "what", "you", "get", "easily", "the", "first", "time,", "it's", "about", "what", "you", "can", "figure", "out.", "-2015,", "Chris", "Pine,", "Learn", "JavaScript"];
+const secretMessage = ["Learning", "isn't", "about", "what", "you", "get", "right", "the", "first", "time,", "it's", "about", "what", "you", "can", "figure", "out.", "-2015,", "Chris", "Pine,", "Learn", "JavaScript"];
+const poppedSecretMessage = secretMessage.pop(); // Enlève la dernière valeur du tableau
+const pushedSecretMessage = secretMessage.push('to', 'program'); // Rajoute des entrées à mon array
+const shiftedSecretMessage = secretMessage.shift(); // Delete la premiere entrée de l'array
+const unshiftedecretMessage = secretMessage.unshift('Programming') // Ajoute la première entrée de l'array
+const splicedSecretMessage = secretMessage.splice(5, 5, 'know'); // Remplace à partir de l'entrée 5, 5 valeurs, 'know'
+console.log(secretMessage.join()); // Methode join() renvoye une chaine de charactere qui correspond aux entrées de notre array
