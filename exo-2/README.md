@@ -14,7 +14,7 @@ Vous allez ici **récréer cette logique dans la console du navigateur**.
 Commencer par créer une variable assignée à un objet Date :
 
 ```js
-const myDate = Date.now();
+const myDate = new Date();
 ```
 
 Vous pouvez désormais appeler des _méthodes_ sur cette variable _myDate_.
