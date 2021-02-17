@@ -11,56 +11,63 @@
 
         /* Section 1 */   
 
-        var name = "Joe";
-        var city = 'London';
-        var age = 32;
-        var isRed = true;
-        var isOld = age > 80;
+        var name = "Joe"; // Je déclare une variable name (string) qui prend la valeur "Joe"
+        var city = 'London'; // Je déclare une variable city (string) qui prend la valeur "London"
+        var age = 32; // Je déclare une variable age (number) qui prend la valeur "32"
+        var isRed = true; // Je déclare une variable isRed (booléen) qui prend la valeur "true"
+        var isOld = age > 80; // Je déclare une variable isOld qui correspond à la variable age supérieur à 80
 
-        var previousJobs = ['lawyer', 'developper', 'Professionnal climber'];
+        var previousJobs = ['lawyer', 'developper', 'Professionnal climber']; // Je déclare une variable previousJobs qui contient un array
 
-        function info(height, weight) {
-            if (height > 180) {
-                console.log('Vous êtes grand');
-            }
-            if (weight < 0) {
-                console.log('oups, there is a problem');
-            } else if ( weight < 15) {
-                console.log('Are you that slim ?')
-            } else {
-                console.log('Good !')
+        function info(height, weight) { // Création d'une fonction info qui possède en paramètre une variable height et weight
+            if (height > 180) { // Condition Si la variable height est supérieur à 180
+                console.log('Vous êtes grand'); // Afficher le message "Vous êtes grand" dans la console
+            } // Fin de condition
+            if (weight < 0) { // Condition Si la variable weight est inférieur à 0
+                console.log('oups, there is a problem'); // Afficher le message "Oups, there is a problem" dans la console
+            } else if ( weight < 15) { // Condition Sinon si la variable weight est inférieur à 15
+                console.log('Are you that slim ?') // Afficher le message "Are you that slim ?" dans la console
+            } else { // Condition sinon si il n'y a aucune des conditions précendentes
+                console.log('Good !') // Afficher le message "Good!" dans la console
             }
         }
 
-        info(165, 45);
+        info(165, 45); // Utilisation de la fonction info avec en parametre la variable height à "165" et la variable weight à "45"
 
-        var myHeight = 175;
-        var myWeight = 86;
+        var myHeight = 175; // Je déclare une variable myHeight qui prend la valeur "175"
+        var myWeight = 86; // Je déclare une variable myWeight qui prend la valeur "86"
 
-        info(myHeight, myWeight);
+        info(myHeight, myWeight); // Utilisation de la fonction info avec en parametre les deux variables myHeight et myWeight
 
-        info(myHeight + 15, myWeight - 100);
+        info(myHeight + 15, myWeight - 100); // Même fonction, la valeur de myHeight augmente de 15, et la valeur de myWeight perds 100 
 
-        function toUpper(variable) {
-            return variable.toUpperCase();
+        function toUpper(variable) { // Création de la fonction toUpper avec en parametre une variable variable
+            return variable.toUpperCase(); // On met fin à la fonction en retournant la variable à notre fonction
         }
 
-        var upperName = toUpper(name);
+        var upperName = toUpper(name); // On déclare la variable upperName et on lui assigne la fonction toUpper(name)
 
-        for (i = 0; i < 3; i = i + 1) {
-            console.log(previousJobs[i]);
+        for (i = 0; i < 3; i = i + 1) { // Boucle tant que la variable I est inférieur à 3, Ajouter +1 à I
+            console.log(previousJobs[i]); // Aficher les valeurs de l'array previousJob dans la console
         }
 
         /* Section 2: */
 
         // afficher la ville dans laquele Joe vit.     
 
+        // console.log(city) // Affiche dans la console la variable city qui correspond à la ville de joe
+        document.write(city); // Affiche sur une page HTML la variable city
+
+        document.write("<br>"); // Saut à la ligne
+
         // afficher si Joe est roux ou pas.
+
+        // console.log(isRed) // Affiche dans la console la variable isRed qui correspond à la rousseur de joe 
+        document.write(isRed); // Affiche sur une page HTML la variable isRed
 
         /* Section 3 */
 
-        // console.log(myVariable);
-
+        console.log(myVariable); // Affiche dans la console la variable myVariable
         </script>
 
     </body>

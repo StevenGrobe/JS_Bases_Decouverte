@@ -27,3 +27,4 @@ Décommenter la ligne puis recharger la page.
 ```
 
 Que se passe-t-il et pourquoi ?
+Une erreur dans la console apparait, la variable myVariable n'est pas définie, car on ne l'a pas déclaré.
