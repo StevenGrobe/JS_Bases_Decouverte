@@ -13,7 +13,7 @@ function getPlayerChoice() {
 
 // Choix de l'ordinateur avec MathRandom()
 function getComputerChoice() {
-    computerInput = Math.floor(Math.random() * 3);
+    computerInput = Math.floor(Math.random() * 3); // Randomize de 0 à 2
     // console.log('Computer :', computerInput); // Debug ma variable
     if (computerInput === 0) {
         computerInput = "rock";
@@ -22,7 +22,7 @@ function getComputerChoice() {
     } else if (computerInput === 2) {
         computerInput = "scissors";
     }
-    console.log(computerInput);
+    console.log('Computer :', computerInput);
     return computerInput;
 }
 
