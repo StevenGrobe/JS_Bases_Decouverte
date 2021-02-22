@@ -37,10 +37,10 @@ function playgame() {
 function findWinner(uChoice, computerChoice) {
     if (uChoice === computerChoice) {
         console.log('Tied');
-    } else if ((uChoice === "rock" && computerChoice === "scissors") || 
-                (uChoice === "paper" && computerChoice === "rock") || 
-                (uChoice === "scissors" && computerChoice === "paper") || 
-                (uChoice === "bomb")) {
+    } else if ((uChoice === "rock" && computerChoice === "scissors") ||
+        (uChoice === "paper" && computerChoice === "rock") ||
+        (uChoice === "scissors" && computerChoice === "paper") ||
+        (uChoice === "bomb")) {
         console.log('Win');
     } else {
         console.log('Loose');
