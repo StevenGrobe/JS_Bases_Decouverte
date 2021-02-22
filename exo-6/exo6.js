@@ -17,10 +17,10 @@ joeInfo.bathrooms = 1;
 console.log('Salle de bain de Joe : ', joeInfo.bathrooms);
 // 3. Joe vient d'acquérir un garage. Afficher cette nouvelle information. 
 joeInfo.garage = true;
-console.log('Garage de Joe : ', joeInfo.garage);
+console.log("Joe vient d'acquérir un garage", '-', joeInfo.garage);
 
 // Objet team
-var team = {
+let team = {
     // Tableau d'objet
     players: [
         {
@@ -59,10 +59,18 @@ var team = {
 };
 
 // Appel de mes fonctions
+team.addPlayer("Mallie", "Durgan", 9);
 team.addPlayer("Steven", "Grobe", 23);
-team.addGame("Knight", 3, 64);
-team.addGame("Cat", 45, 4);
-team.addGame("Dog", 6, 18);
+team.addPlayer("Luca", "Borremans", 19);
+
+
+team.addGame("Knight", 8, 64);
+team.addGame("Cat", 45, 10);
+team.addGame("Dog", 5, 18);
+
+// Affichage array
+console.log(team.players);
+console.log(team.games);
 
 // Calculer la somme des points de l'équipe
 const totalTeamPoint = team.games.reduce(
@@ -70,7 +78,7 @@ const totalTeamPoint = team.games.reduce(
         return prev + cur.teamPoints;
     }, 0);
 
-console.log(totalTeamPoint);
+console.log('Somme des points de notre équipe : ', totalTeamPoint);
 
 // Calculer moyenne des points des équipes adverses
 let sum = 0;
@@ -83,24 +91,16 @@ console.log('Average opponent points : ', averageOpponentPoints);
 
 // Fonction calcul le plus agé
 function calculOldest() {
-    oldestPerson = 0
-    highestAge = team.players.reduce((prev, curr) => {
-        if (curr.age > oldestPerson) {
-            oldestPerson = curr.age;
-            console.log(oldestPerson);
-            return curr.firstName;
-        }
-        return prev;
-    },'');
+    highestAge = 0
+    calculAge = team.players.reduce(
+        function (prev, curr) {
+            if (curr.age > highestAge) {
+                highestAge = curr.age;
+                oldestPerson = curr.firstName;
+                return prev, curr;
+            }
+        });
 }
-calculOldest()
-console.log('le plus agé :', highestAge);
+calculOldest();
+console.log('le plus agé est', oldestPerson, highestAge, 'ans');
 
-// Fonction trie
-const sortPlayer = team.players.sort(function (a, b) {
-    return a.
-}
-
-// Affichage tables
-console.log(team.players);
-console.log(team.games);
